@@ -33,3 +33,33 @@ if "x-content-type" in result:
 else:
         print("\033[1;31;49m")
         print "         C-Content-Type header is not present"
+
+if "Public-Key-Pins" in result:
+        print("\033[1;32;49m")
+        print "         Public-Key-Pins is present"
+else:
+        print("\033[1;31;49m")
+        print "         Public-Key-Pins header is not present"
+
+if "X-Content-Type-Options" in result:
+        print("\033[1;32;49m")
+        print "         X-Content-Type-Options is present"
+else:
+        print("\033[1;31;49m")
+        print "         X-Content-Type-Options header is not present"
+
+if "X-Permitted-Cross-Domain-Policies" in result:
+        print("\033[1;32;49m")
+        print "         X-Permitted-Cross-Domain-Policies is present"
+else:
+        print("\033[1;31;49m")
+        print "         X-Permitted-Cross-Domain-Policies header is not present"
+
+if "Content-Security-Policy" in result:
+        print("\033[1;32;49m")
+        print "         Referrer-Policy is present"
+else:
+        print("\033[1;31;49m")
+        print "         Referrer-Policy header is not present"
+        
+
